@@ -1,0 +1,4 @@
+# Ignore everything except assets intended for the public submodule
+/*
+!/.gitignore
+!/Assets/Public/**/*
