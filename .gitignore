@@ -1,4 +1,6 @@
-# Ignore everything except assets intended for the public submodule
-/*
+# Include everything.
+!*
+
+# But especially include gitignore and README.md
 !/.gitignore
-!/Assets/Public/**/*
+!README.md
