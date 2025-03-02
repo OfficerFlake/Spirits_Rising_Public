@@ -4,3 +4,7 @@
 # But especially include gitignore and README.md
 !/.gitignore
 !README.md
+
+# Ignore anything we specifically flag as wanting to exclude!
+# Useful for things like local testing.
+*.IGNORE.*
