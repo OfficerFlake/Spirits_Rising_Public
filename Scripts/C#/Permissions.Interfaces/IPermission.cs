@@ -17,7 +17,7 @@ namespace Permissions.Interfaces
         /// 
         /// You can pass a LINQ expression here and the expression will be re-evaluated at runtime.
         /// </summary>
-        public IEnumerable<IPermissionHolder> Sources { get; set; }
+        IEnumerable<IPermissionHolder> Sources { get; set; }
 
         /// <summary>
         /// A permission function that takes 0 arguments and return a Boolean.
@@ -27,6 +27,6 @@ namespace Permissions.Interfaces
         /// 
         /// By using an Enumerable with the Lambda function, we process the permission check at the time the check is required, with updated context.
         /// </summary>
-        public Func<IEnumerable<IPermissionHolder>, bool> PermissionsFunction { get; set; }
+        Func<IEnumerable<IPermissionHolder>, bool> PermissionsFunction { get; set; }
     }
 }
