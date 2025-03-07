@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Permissions.Interfaces
+namespace Modules.Permissions.Interfaces
 {
     public static class PermissionExtensions
     {

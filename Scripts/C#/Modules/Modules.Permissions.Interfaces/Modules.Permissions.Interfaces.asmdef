@@ -1,5 +1,5 @@
 {
-    "name": "Console.Interfaces",
+    "name": "Modules.Permissions.Interfaces",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],

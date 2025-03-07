@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Permissions.Interfaces
+namespace Modules.Permissions.Interfaces
 {
     /// <summary>
     /// A generic tag that applies to anything that an IPermission should apply to.

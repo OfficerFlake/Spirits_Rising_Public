@@ -1,5 +1,5 @@
 {
-    "name": "Permissions.Interfaces",
+    "name": "Modules.Testing.Interfaces",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
@@ -10,5 +10,5 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
-    "noEngineReferences": true
+    "noEngineReferences": false
 }
