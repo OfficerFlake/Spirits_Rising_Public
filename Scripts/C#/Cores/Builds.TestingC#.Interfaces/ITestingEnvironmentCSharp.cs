@@ -5,7 +5,7 @@ namespace Builds.TestingCSharp.Interfaces
     public interface ITestingEnvironmentCSharp
     {
         Task Initialize();
-        Task Start();
+        Task Run();
         Task Stop();
     }
 }
