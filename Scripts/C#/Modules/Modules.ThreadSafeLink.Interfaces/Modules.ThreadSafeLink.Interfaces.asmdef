@@ -1,5 +1,5 @@
 {
-    "name": "Modules.UnityLink.Interfaces",
+    "name": "Modules.ThreadSafeLink.Interfaces",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
