@@ -8,6 +8,7 @@
 # Ignore anything we specifically flag as wanting to exclude!
 # Useful for things like local testing.
 *.IGNORE.*
+*.PRIVATE.*
 
 # Ignore build directories
 obj/

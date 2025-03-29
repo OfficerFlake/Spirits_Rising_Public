@@ -1,0 +1,19 @@
+{
+    "name": "Modules.Console.Interfaces",
+    "rootNamespace": "",
+    "references": [
+        "Common.SynchronisedGameObject.Interfaces",
+        "Common.SynchronisedGameObject.Implementation",
+        "Common.ThreadSafeStream.Interfaces",
+        "Common.ThreadSafeStream.Implementation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

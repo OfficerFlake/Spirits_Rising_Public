@@ -1,5 +1,5 @@
 {
-    "name": "Modules.Testing.Interfaces",
+    "name": "Common.SynchronisedGameObject.Interfaces",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],

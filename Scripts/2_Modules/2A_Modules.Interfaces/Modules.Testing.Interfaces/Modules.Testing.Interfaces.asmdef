@@ -1,7 +1,10 @@
 {
-    "name": "Modules.Console.Interfaces",
+    "name": "Modules.Testing.Interfaces",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:dbc34dfdf052c0143a6e86058ac6754c",
+        "GUID:9f60150782f05fa468bb06cd74cded72"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -10,5 +13,5 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
-    "noEngineReferences": true
+    "noEngineReferences": false
 }

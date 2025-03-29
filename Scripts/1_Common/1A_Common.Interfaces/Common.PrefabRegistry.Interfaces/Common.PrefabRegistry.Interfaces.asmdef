@@ -1,5 +1,5 @@
 {
-    "name": "Modules.ThreadSafeLink.Interfaces",
+    "name": "Common.PrefabRegistry.Interfaces",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
