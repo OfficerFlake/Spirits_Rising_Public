@@ -1,5 +1,3 @@
-using Common.ThreadSafeStream.Implementation;
-using Common.ThreadSafeStream.Interfaces;
 using System;
 using UnityEngine;
 
@@ -12,8 +10,8 @@ namespace NewLinkingSystem
     public interface ICharTest
     {
         Characters CharEnum { get; set; }
-        IThreadSafeStream<int> Test { get; set; }
-        IThreadSafeStream<string> Test2 { get; set; }
+        //IThreadSafeStream<int> Test { get; set; }
+        //IThreadSafeStream<string> Test2 { get; set; }
     }
 
     public abstract class OnEventListener
@@ -41,19 +39,19 @@ namespace NewLinkingSystem
     {
         OnTickEventListener OnTickEventListener { get; set; }
         Characters CharEnum { get; set; }
-        IThreadSafeStreamWrapperDown<int> Test { get; set; }
-        IThreadSafeStreamWrapperDown<string> Test2 { get; set; }
+        //IThreadSafeStreamWrapperDown<int> Test { get; set; }
+        //IThreadSafeStreamWrapperDown<string> Test2 { get; set; }
 
         public ICharTestLogic()
         {
             //Link Pos
-            Test = (IThreadSafeStreamWrapperDown<int>)new ThreadSafeStreamWrapperDown<int>(new ThreadSafeStream<int>(0, 0));
+            //Test = (IThreadSafeStreamWrapperDown<int>)new ThreadSafeStreamWrapperDown<int>(new ThreadSafeStream<int>(0, 0));
             //Link Rot
-            Test2 = (IThreadSafeStreamWrapperDown<string>)new ThreadSafeStreamWrapperDown<string>(new ThreadSafeStream<string>("Up", "Down"));
+            //Test2 = (IThreadSafeStreamWrapperDown<string>)new ThreadSafeStreamWrapperDown<string>(new ThreadSafeStream<string>("Up", "Down"));
 
             //Confirm operations working
-            Test += 1;
-            Test2 += "Hello";
+            //Test += 1;
+            //Test2 += "Hello";
 
             //Link OnTick()
             OnTickEventListener = new OnTickEventListener(() => OnTick());
@@ -71,16 +69,17 @@ namespace NewLinkingSystem
     public class ICharTestUnity : MonoBehaviour
     {
         Characters CharacterID { get; set; }
-        IThreadSafeStreamWrapperUp<int> Test { get; set; }
-        IThreadSafeStreamWrapperUp<string> Test2 { get; set; }
+        //IThreadSafeStreamWrapperUp<int> Test { get; set; }
+        //IThreadSafeStreamWrapperUp<string> Test2 { get; set; }
 
         public void Start()
         {
-            Test = (IThreadSafeStreamWrapperUp<int>)new ThreadSafeStreamWrapperUp<int>(new ThreadSafeStream<int>(0, 0));
-            Test2 = (IThreadSafeStreamWrapperUp<string>)new ThreadSafeStreamWrapperUp<string>(new ThreadSafeStream<string>("Up", "Down"));
+            throw new NotImplementedException();
+            //Test = (IThreadSafeStreamWrapperUp<int>)new ThreadSafeStreamWrapperUp<int>(new ThreadSafeStream<int>(0, 0));
+            //Test2 = (IThreadSafeStreamWrapperUp<string>)new ThreadSafeStreamWrapperUp<string>(new ThreadSafeStream<string>("Up", "Down"));
             //Confirm operations working
-            Test += 1;
-            Test2 += "Hello";   
+            //Test += 1;
+            //Test2 += "Hello";   
         }
         public void Update()
         {

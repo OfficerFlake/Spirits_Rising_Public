@@ -1,5 +1,5 @@
 {
-    "name": "Builds.TestingC#.Interfaces",
+    "name": "Builds.TestingCSharp.Interfaces",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
