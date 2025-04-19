@@ -4,20 +4,26 @@ using System;
 
 namespace Modules.Console.Interfaces
 {
-    public interface IConsole
+    public interface IConsoleLogic
     {
-        IThreadSafeStream<string> Messages { get; }
-        IThreadSafeStream<bool> Show { get; }
+        IThreadSafeStreamWrapperLogic<string> Messages { get; }
+        IThreadSafeStreamWrapperLogic<bool> Show { get; }
+    };
+
+    public interface IConsoleUnity
+    {
+        IThreadSafeStreamWrapperUnity<string> Messages { get; }
+        IThreadSafeStreamWrapperUnity<bool> Show { get; }
     };
     public static class Console
     {
-        private static IConsole _instance;
-        public static IConsole Instance => _instance;
-        public static void SetInstance(IConsole console) => _instance = console;
-        public static void Write(string Message) => Instance?.Messages?.Down?.Add(Message);
+        private static IConsoleLogic _instance;
+        public static IConsoleLogic Instance => _instance;
+        public static void SetInstance(IConsoleLogic console) => _instance = console;
+        public static void Write(string Message) => Instance.Messages.Value = Message;
         public static void WriteLine(string Message) => Write("\n" + Message);
 
-        public static void Show() => Instance?.Show?.Down?.Add(true);
-        public static void Hide() => Instance?.Show?.Down?.Add(false);
+        public static void Show() => Instance.Show.Value = true;
+        public static void Hide() => Instance.Show.Value = false;
     }
 }

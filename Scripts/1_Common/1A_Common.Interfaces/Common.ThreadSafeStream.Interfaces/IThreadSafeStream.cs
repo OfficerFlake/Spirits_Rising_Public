@@ -7,5 +7,8 @@ namespace Common.ThreadSafeStream.Interfaces
     {
         public List<T> Up { get; set; }
         public List<T> Down { get; set; }
+
+        public IThreadSafeStreamWrapperUnity<T> GetUnityWrapper();
+        public IThreadSafeStreamWrapperLogic<T> GetLogicWrapper();
     }
 }
