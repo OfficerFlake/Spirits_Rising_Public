@@ -165,7 +165,7 @@ namespace NewStreamTest
         public ConcurrentQueue<T> Queue { get; }
 
         private T _value;
-        public T Value { get { return _value; } set { Queue.Enqueue(value); Value = value; } }
+        public T Value { get { return _value; } set { Queue.Enqueue(value); _value = value; } }
         public MonoDirectionalStream(BiDirectionalStream<T> stream)
         {
             Parent = stream;
